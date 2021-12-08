@@ -1,0 +1,62 @@
+/*basic formatting*/
+
+body {
+	background-image: url(monke.jpeg);
+	font-family: cursive;
+	font-size: 40px;
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+	color: rgb(255, 255, 0)
+}
+
+/* id for smiling monkey*/
+
+#rotate{
+  animation:rotateanim 4s infinite;
+  animation-play-state:paused;
+}
+
+/* makes the smiling monkey spin when hovered over */
+@keyframes rotateanim{
+    50%{
+      transform: rotate(180deg)
+    }
+  100%{
+    transform:rotate(360deg);
+  }
+}
+
+#coolid {
+  animation: textstretch 2s infinite;
+  height: 500px;
+  width:auto;
+}
+
+@keyframes textstretch {
+  50%{
+   letter-spacing: 30px;
+  }
+}
+
+
+/*defines animation and stylesheet for the monkey pog image*/
+
+#imgAnim {
+	height: 5000px;
+	width: 500px;
+	animation: stretchAnim 5s infinite;
+	
+}
+#rotate:hover {
+  animation-play-state:running;
+}
+
+
+/*defines keyframes for the ImgAnim*/
+
+@keyframes stretchAnim {
+	50% {
+		height: 2000px;
+	}
+}
